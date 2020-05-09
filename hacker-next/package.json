@@ -4,8 +4,10 @@
   "description": "A Hacker News Clone made with Next.js",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build",
+    "export": "next build && next export"
   },
   "author": "Jen Yang",
   "license": "ISC",
@@ -13,6 +15,7 @@
     "isomorphic-fetch": "^2.2.1",
     "next": "^9.3.6",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "sw-precache-webpack-plugin": "^1.0.0"
   }
 }
